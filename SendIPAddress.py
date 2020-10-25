@@ -1,3 +1,6 @@
+from path_init import path_init
+path_init()
+
 import subprocess
 import socket
 from Email import Email

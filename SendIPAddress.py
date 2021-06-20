@@ -20,7 +20,7 @@ while 1:
         IP_address_new=GetIPAddress()
         
         if IP_address_new!=IP_address_old:
-            ifconfig=subprocess.check_output('ipconfig' ).decode('utf-8')
+            ifconfig=subprocess.check_output('ifconfig' ).decode('utf-8')
             
             subject='RaspberryPi IP Address'
             body='IP Address: '+IP_address_new+'\n' \
